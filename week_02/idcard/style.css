@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e8ecf3;
+    color: #222;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+}
+
+.card {
+    width: 100%;
+    max-width: 380px;
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+/* Header */
+.card-header {
+    background: #0b2a6f;
+    color: #fff;
+    padding: 20px 16px 56px;
+}
+
+.card-header h1 {
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: normal;
+    opacity: 0.8;
+}
+
+.card-header h2 {
+    font-size: 24px;
+    margin-top: 6px;
+}
+
+/* Photo overlapping the header */
+.photo {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #fff;
+    background: #ccd3e0;
+    margin-top: -56px;
+}
+
+.name {
+    font-size: 22px;
+    color: #0b2a6f;
+    margin: 12px 0 4px;
+}
+
+.id-badge {
+    display: inline-block;
+    background: #eef2fb;
+    color: #0b2a6f;
+    font-weight: bold;
+    padding: 4px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+/* Details as aligned label / value rows */
+.details {
+    margin: 20px 24px 0;
+    border-top: 1px solid #ddd;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 9px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 15px;
+}
+
+.row .label {
+    font-weight: bold;
+    color: #555;
+    text-align: left;
+}
+
+.row .value {
+    text-align: right;
+    word-break: break-word;
+}
+
+/* Subjects */
+.subjects {
+    margin: 18px 24px 0;
+    text-align: left;
+}
+
+.subjects h3 {
+    font-size: 15px;
+    color: #0b2a6f;
+    margin-bottom: 8px;
+}
+
+.subjects ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.subjects li {
+    background: #eef2fb;
+    padding: 5px 12px;
+    border-radius: 14px;
+    font-size: 14px;
+}
+
+/* Footer */
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 24px;
+    font-size: 13px;
+    text-align: left;
+}
+
+.signature {
+    text-align: center;
+    min-width: 140px;
+}
+
+.signature .line {
+    border-top: 1px solid #222;
+    margin-bottom: 4px;
+}
