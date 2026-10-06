@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Professional Student ID Card</title>
+
+    <link rel="stylesheet" href="design.css">
+</head>
+
+<body>
+
+    <!-- ============================= -->
+    <!-- MAIN ID CARD -->
+    <!-- ============================= -->
+
+    <div class="id-card">
+
+        <!-- Card Top -->
+        <div class="card-top">
+
+            <div class="university-logo">
+                C
+            </div>
+
+            <div class="university-info">
+                <h1>CINEC CAMPUS</h1>
+                <p>STUDENT IDENTITY CARD</p>
+            </div>
+
+        </div>
+
+
+        <!-- Card Body -->
+        <div class="card-body">
+
+            <!-- Profile Section -->
+
+            <div class="profile-section">
+
+                <img
+                    id="profileImage"
+                    class="profile-image"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFgOd90f7IgEv8EH6ZMLc6BG1r_vpI1C3SCPRl_vmmzA&s=10"
+                    alt="Student Profile Picture"
+                >
+
+                <span class="status">
+                    ACTIVE
+                </span>
+
+            </div>
+
+
+            <!-- Student Information -->
+
+            <div class="student-info">
+
+                <h2 id="studentName">
+                    Nisal Vimukthi
+                </h2>
+
+                <p class="student-id">
+                    Student ID: <strong>STU001</strong>
+                </p>
+
+
+                <div class="info-item">
+                    <span>Course</span>
+                    <strong>Computer Science</strong>
+                </div>
+
+
+                <div class="info-item">
+                    <span>Academic Year</span>
+                    <strong>2nd Year</strong>
+                </div>
+
+
+                <div class="info-item">
+                    <span>Date of Birth</span>
+                    <strong>16 March 2001</strong>
+                </div>
+
+
+                <div class="info-item">
+                    <span>Email</span>
+                    <strong>nisal@example.com</strong>
+                </div>
+
+
+                <div class="info-item">
+                    <span>Phone</span>
+                    <strong>071 234 5678</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Card Bottom -->
+
+        <div class="card-bottom">
+
+            <div class="validity">
+                <span>VALID UNTIL</span>
+                <strong>DEC 2027</strong>
+            </div>
+
+
+            <div class="signature-area">
+
+                <div class="signature-line"></div>
+
+                <span>AUTHORIZED SIGNATURE</span>
+
+            </div>
+
+
+            <div class="qr-code">
+
+                <div class="qr-pattern">
+                    ▦
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Card Footer -->
+
+        <div class="card-footer">
+
+            <span>Computer Science Department</span>
+
+            <span>Official Student Identification</span>
+
+        </div>
+
+    </div>
+
+
+    <!-- ============================= -->
+    <!-- JAVASCRIPT CONTROLS -->
+    <!-- ============================= -->
+
+    <div class="controls">
+
+        <h2>JavaScript Activities</h2>
+
+        <p>
+            Use the buttons below to interact with the ID card.
+        </p>
+
+
+        <div class="button-group">
+
+            <button
+                class="button primary"
+                onclick="changeProfileImage()">
+                Change Profile Image
+            </button>
+
+
+            <button
+                class="button danger"
+                onclick="resetProfileImage()">
+                Reset Image
+            </button>
+
+
+            <button
+                class="button purple"
+                onclick="changeName()">
+                Change Name
+            </button>
+
+
+            <button
+                class="button green"
+                onclick="changeBackground()">
+                Change Background
+            </button>
+
+
+            <button
+                class="button orange"
+                onclick="showMessage()">
+                Show Message
+            </button>
+
+
+            <button
+                class="button dark"
+                onclick="showSkills()">
+                Show Skills
+            </button>
+
+
+            <button
+                class="portfolio-button"
+                onclick="visitPortfolio()">
+                Visit My Portfolio
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

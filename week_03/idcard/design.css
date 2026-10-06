@@ -1,0 +1,678 @@
+/* =========================================
+   GENERAL PAGE
+========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 40px 20px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background:
+        linear-gradient(
+            135deg,
+            #eef3f8,
+            #dfe8f1
+        );
+
+    color: #172033;
+
+    transition: background 0.5s ease;
+}
+
+
+/* =========================================
+   ID CARD
+========================================= */
+
+.id-card {
+
+    width: 720px;
+    max-width: 100%;
+
+    margin: auto;
+
+    background: #ffffff;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 20px 50px rgba(20, 40, 70, 0.18);
+
+    border: 1px solid #dce4ec;
+
+}
+
+
+/* =========================================
+   CARD TOP
+========================================= */
+
+.card-top {
+
+    height: 105px;
+
+    padding: 22px 30px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            135deg,
+            #082f61,
+            #0d5aa7
+        );
+
+}
+
+
+/* Logo */
+
+.university-logo {
+
+    width: 58px;
+    height: 58px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background: rgba(255, 255, 255, 0.15);
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    font-size: 30px;
+
+    font-weight: bold;
+}
+
+
+/* University information */
+
+.university-info h1 {
+
+    margin: 0;
+
+    font-size: 25px;
+
+    letter-spacing: 1px;
+
+}
+
+
+.university-info p {
+
+    margin: 6px 0 0;
+
+    font-size: 12px;
+
+    letter-spacing: 2px;
+
+    opacity: 0.85;
+
+}
+
+
+/* =========================================
+   CARD BODY
+========================================= */
+
+.card-body {
+
+    display: grid;
+
+    grid-template-columns: 210px 1fr;
+
+    gap: 30px;
+
+    padding: 32px;
+
+}
+
+
+/* =========================================
+   PROFILE
+========================================= */
+
+.profile-section {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+}
+
+
+/* Profile image */
+
+.profile-image {
+
+    width: 165px;
+    height: 165px;
+
+    object-fit: cover;
+
+    border-radius: 14px;
+
+    border: 5px solid #ffffff;
+
+    outline: 2px solid #0d5aa7;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.15);
+
+    transition: 0.4s ease;
+
+}
+
+
+/* Image hover */
+
+.profile-image:hover {
+
+    transform: scale(1.04);
+
+}
+
+
+/* Active status */
+
+.status {
+
+    margin-top: 14px;
+
+    padding: 5px 15px;
+
+    border-radius: 20px;
+
+    background: #dcfce7;
+
+    color: #15803d;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+}
+
+
+/* =========================================
+   STUDENT INFORMATION
+========================================= */
+
+.student-info h2 {
+
+    margin: 0 0 5px;
+
+    font-size: 28px;
+
+    color: #13233b;
+
+}
+
+
+.student-id {
+
+    margin: 0 0 20px;
+
+    color: #667085;
+
+    font-size: 14px;
+
+}
+
+
+.student-id strong {
+
+    color: #0d5aa7;
+
+}
+
+
+/* Information rows */
+
+.info-item {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 10px 0;
+
+    border-bottom: 1px solid #edf0f4;
+
+}
+
+
+.info-item span {
+
+    color: #667085;
+
+    font-size: 13px;
+
+}
+
+
+.info-item strong {
+
+    color: #172033;
+
+    font-size: 14px;
+
+    text-align: right;
+
+}
+
+
+/* =========================================
+   CARD BOTTOM
+========================================= */
+
+.card-bottom {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 90px;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 20px 30px;
+
+    background: #f7f9fc;
+
+    border-top: 1px solid #e5eaf0;
+
+}
+
+
+/* Validity */
+
+.validity {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+
+}
+
+
+.validity span {
+
+    font-size: 10px;
+
+    color: #7a8494;
+
+    letter-spacing: 1px;
+
+}
+
+
+.validity strong {
+
+    font-size: 14px;
+
+    color: #172033;
+
+}
+
+
+/* Signature */
+
+.signature-area {
+
+    text-align: center;
+
+}
+
+
+.signature-line {
+
+    width: 130px;
+
+    margin: auto;
+
+    border-top: 1px solid #333;
+
+}
+
+
+.signature-area span {
+
+    display: block;
+
+    margin-top: 5px;
+
+    font-size: 9px;
+
+    color: #7a8494;
+
+}
+
+
+/* =========================================
+   QR CODE
+========================================= */
+
+.qr-code {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+
+.qr-pattern {
+
+    width: 58px;
+    height: 58px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 4px solid #172033;
+
+    font-size: 40px;
+
+    line-height: 1;
+
+}
+
+
+/* =========================================
+   CARD FOOTER
+========================================= */
+
+.card-footer {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    padding: 10px 30px;
+
+    background: #082f61;
+
+    color: rgba(255, 255, 255, 0.8);
+
+    font-size: 10px;
+
+}
+
+
+/* =========================================
+   CONTROLS
+========================================= */
+
+.controls {
+
+    width: 720px;
+
+    max-width: 100%;
+
+    margin: 35px auto 0;
+
+    padding: 25px;
+
+    background: white;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    box-shadow:
+        0 10px 30px rgba(20, 40, 70, 0.1);
+
+}
+
+
+.controls h2 {
+
+    margin: 0;
+
+    color: #172033;
+
+}
+
+
+.controls p {
+
+    margin: 8px 0 20px;
+
+    color: #667085;
+
+    font-size: 14px;
+
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.button-group {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 8px;
+
+}
+
+
+.button {
+
+    border: none;
+
+    padding: 10px 15px;
+
+    border-radius: 7px;
+
+    color: white;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: all 0.25s ease;
+
+}
+
+
+.button:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 5px 12px rgba(0, 0, 0, 0.15);
+
+}
+
+
+.button:active {
+
+    transform: scale(0.94);
+
+}
+
+
+/* Button colours */
+
+.primary {
+    background: #0d6efd;
+}
+
+.danger {
+    background: #dc3545;
+}
+
+.purple {
+    background: #6f42c1;
+}
+
+.green {
+    background: #198754;
+}
+
+.orange {
+    background: #fd7e14;
+}
+
+.dark {
+    background: #343a40;
+}
+
+
+/* =========================================
+   PORTFOLIO BUTTON
+========================================= */
+
+.portfolio-button {
+
+    margin-top: 15px;
+
+    padding: 13px 30px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #082f61,
+            #0d5aa7
+        );
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+
+}
+
+
+.portfolio-button:hover {
+
+    transform: translateY(-3px) scale(1.03);
+
+    box-shadow:
+        0 8px 20px rgba(13, 90, 167, 0.3);
+
+}
+
+
+.portfolio-button:active {
+
+    transform: scale(0.95);
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+
+    body {
+        padding: 20px 10px;
+    }
+
+
+    .card-body {
+
+        grid-template-columns: 1fr;
+
+        text-align: center;
+
+    }
+
+
+    .profile-section {
+
+        margin-bottom: 10px;
+
+    }
+
+
+    .student-info h2 {
+
+        font-size: 23px;
+
+    }
+
+
+    .info-item {
+
+        text-align: left;
+
+    }
+
+
+    .card-bottom {
+
+        grid-template-columns: 1fr;
+
+        text-align: center;
+
+    }
+
+
+    .qr-code {
+
+        margin-top: 5px;
+
+    }
+
+
+    .card-footer {
+
+        flex-direction: column;
+
+        gap: 5px;
+
+    }
+
+}
